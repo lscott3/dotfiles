@@ -4,17 +4,17 @@ set background=dark
 set guifont=Inconsolata:h16
 colorscheme SpacegrayEighties
 
-autocmd FileType * nested :call tagbar#autoopen(0)
+" autocmd FileType * nested :call tagbar#autoopen(0)
 map <leader>c <C-]>
 
 " NERDTree config from Janus
 let NERDTreeHijackNetrw = 0
 let NERDTreeIgnore=['\.pyc$', '\.pyo$', '\.rbc$', '\.rbo$', '\.class$', '\.o$', '\~$']
 
-  " Default mapping, <leader>n
-  map <leader>n :NERDTreeToggle<CR> :NERDTreeMirror<CR>
+" Default mapping, <leader>n
+map <leader>n :NERDTreeToggle<CR> :NERDTreeMirror<CR>
 
-  augroup AuNERDTreeCmd
+augroup AuNERDTreeCmd
   autocmd AuNERDTreeCmd VimEnter * call s:CdIfDirectory(expand("<amatch>"))
   autocmd AuNERDTreeCmd FocusGained * call s:UpdateNERDTree()
 
