@@ -13,7 +13,7 @@
   pf = push --force-with-lease
   st = status
 [core]
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/derek/.gitignore
   autocrlf = input
 [merge]
   ff = only
@@ -26,5 +26,5 @@
 [include]
   path = ~/.gitconfig.local
 [user]
-  name = Derek Schneider
-  email = dschneider@covermymeds.com
+	name = Derek Schneider
+	email = dschneider.641@gmail.com
